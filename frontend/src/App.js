@@ -6,7 +6,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const uploadFile = async () => {
-    if (!file) return alert("Please select a resume");
+    if (!file) return alert("Please select a PDF resume");
 
     const formData = new FormData();
     formData.append("resume", file);
